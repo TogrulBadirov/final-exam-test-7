@@ -1,0 +1,21 @@
+#add-form{
+    padding-top: 100px;
+    background-color: rgb(37, 157, 255);
+    display: flex;
+    justify-content: center;
+    form{
+        width: 600px;
+        padding: 30px 0;
+        color: #fff;
+        input{
+
+            width: 100%;
+        }
+    }
+    .error{
+        color: red;
+    }
+}
+#product-table{
+    padding: 100px 0;
+}

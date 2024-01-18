@@ -1,0 +1,118 @@
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: #00000040;
+  z-index: 10;
+  #desktop-nav {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        color: #fff;
+        span {
+          color: #ffc515;
+        }
+      }
+      .pages {
+        .nav-lists {
+          display: flex;
+          list-style: none;
+          color: #fff;
+          padding: 0;
+          margin: 0;
+          .nav-elem {
+            .nav-link {
+              display: block;
+              padding: 20px;
+            }
+          }
+        }
+      }
+      .reservation {
+        p {
+          color: #fff;
+          span {
+            color: #ffc515;
+          }
+        }
+      }
+    }
+  }
+  #mobile-nav {
+    display: none;
+    .container {
+      align-items: center;
+      justify-content: space-between;
+        .top-nav{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-btn{
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+      .logo {
+        color: #fff;
+        .link{
+            text-decoration: none;
+            color: #fff;
+        }
+        span {
+          color: #ffc515;
+        }
+      }
+      .pages {
+        overflow: hidden;
+        transition: 300ms ease;
+        height: 300px;
+        &.active{
+            height: 0;
+        }
+        .nav-lists {
+          list-style: none;
+          color: #fff;
+          padding: 0;
+          margin: 0;
+          .nav-elem {
+            .nav-link {
+              display: block;
+              padding: 20px;
+            }
+          }
+        }
+      }
+      .reservation {
+        
+        p {
+          color: #fff;
+          .link{
+            text-decoration: none;
+            color: initial;
+        }
+          span {
+            color: #ffc515;
+          }
+        }
+      }
+    }
+  }
+ 
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    #desktop-nav {
+      display: none;
+    }
+    #mobile-nav {
+      display: block;
+    }
+  }
+}

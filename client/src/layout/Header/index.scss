@@ -1,0 +1,63 @@
+#header{
+    // background-image: url("https://preview.colorlib.com/theme/pulse/img/slider/slider-1.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    height: 100vh;
+    width: 100%;
+    .mySwiper{
+        img{
+            max-width: 100%;
+        }
+    }
+    .container{
+
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .content{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            h2{
+                color: #fff;
+                font-size: 90px;
+            }
+            p{
+                color: #fff;
+            }
+        }
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination-bullet{
+        background-color: orange;
+        border-radius: 0;
+      }
+      .swiper-button-next{
+        color: orange;
+      }
+      .swiper-button-prev{
+        color: orange;
+      }
+      
+}
